@@ -419,28 +419,39 @@ textarea {
   padding: 0.2em 0;
 }
 
-body header {
-  background-color: pink;
-}
-body nav {
-  background-color: lightblue;
-}
-body main {
-  background-color: lightgreen;
-}
-body aside {
-  background-color: #f8f865;
-}
-body footer {
-  background-color: lightcoral;
+.icon-sprite, .icon-bug, .icon-cake {
+  background-image: url('../img/icon-s1b8ebab662.png');
+  background-repeat: no-repeat;
 }
 
-h1 {
-  font-family: Helevtica, Arial, Sans-serif;
+.icon-bug {
+  background-position: 0 -150px;
+}
+.icon-bug:hover, .icon-bug.bug-hover {
+  background-position: 0 0;
 }
 
-p {
-  font-family: serif;
+.icon-cake {
+  background-position: 0 -450px;
+}
+.icon-cake:hover, .icon-cake.cake-hover {
+  background-position: 0 -300px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+li a {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+}
+li a span {
+  position: absolute;
+  top: -9999em;
+  left: -9999em;
 }
 
 /*
@@ -601,54 +612,4 @@ p {
   h3 {
     page-break-after: avoid;
   }
-}
-body#grid-wrapper {
-  display: grid;
-  grid-template-columns: 1f;
-  grid-template-rows: repeat(5, 200px);
-  grid-template-areas: 'header' 'navigation' 'main' 'side' 'foot';
-}
-
-@media only screen and (min-width: 800px) {
-  body#grid-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(4, 200px);
-    grid-template-areas: 'header header' 'navigation main' 'side main' 'foot foot';
-  }
-}
-@media only screen and (min-width: 1200px) {
-  body#grid-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: repeat(4, 200px);
-    grid-template-areas: 'header header navigation' 'side main main' '. main main' '. foot foot';
-  }
-}
-@media only screen and (min-width: 1600px) {
-  body#grid-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, 200px);
-    grid-template-areas: 'header header header header' 'nav main side foot';
-  }
-}
-header#header-content {
-  grid-area: header;
-}
-
-nav#nav-content {
-  grid-area: navigation;
-}
-
-main#main-content {
-  grid-area: main;
-}
-
-aside#sidebar {
-  grid-area: side;
-}
-
-footer#foot {
-  grid-area: foot;
 }

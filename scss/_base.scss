@@ -1,25 +1,18 @@
-body {
-    header {
-        @include box(pink);
-    }
-    nav {
-        @include box(lightblue);
-    }
-    main {
-        @include box(lightgreen);
-    }
-    aside {
-        @include box(rgb(248, 248, 101));
-    }
-    footer {
-        @include box(lightcoral);
-    }
-}
+@import 'icon/*.png';
+@include all-icon-sprites;
 
-h1 {
-    font-family: $headerText;
-}
-
-p {
-    font-family: $copyText;
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+        a {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            span {
+                position: absolute;
+                top: -9999em;
+                left: -9999em;
+        }
+    }
 }
