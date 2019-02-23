@@ -419,8 +419,8 @@ textarea {
   padding: 0.2em 0;
 }
 
-.icon-sprite, .icon-bug, .icon-cake {
-  background-image: url('../img/icon-s1b8ebab662.png');
+.icon-sprite, .icon-bug, .icon-cake, .icon-cload, .icon-fox, .icon-leaf, .icon-m, .icon-mad, .icon-save, .icon-squid, .icon-tumblr, .icon-wifi, .icon-x {
+  background-image: url('../img/icon-s5f67fbc6ed.png');
   background-repeat: no-repeat;
 }
 
@@ -438,20 +438,132 @@ textarea {
   background-position: 0 -300px;
 }
 
-li {
-  list-style: none;
-  display: inline-block;
-  padding: 10px;
+.icon-cload {
+  background-position: 0 -750px;
 }
-li a {
+.icon-cload:hover, .icon-cload.cload-hover {
+  background-position: 0 -600px;
+}
+
+.icon-fox {
+  background-position: 0 -1050px;
+}
+.icon-fox:hover, .icon-fox.fox-hover {
+  background-position: 0 -900px;
+}
+
+.icon-leaf {
+  background-position: 0 -1350px;
+}
+.icon-leaf:hover, .icon-leaf.leaf-hover {
+  background-position: 0 -1200px;
+}
+
+.icon-m {
+  background-position: 0 -1650px;
+}
+.icon-m:hover, .icon-m.m-hover {
+  background-position: 0 -1500px;
+}
+
+.icon-mad {
+  background-position: 0 -1950px;
+}
+.icon-mad:hover, .icon-mad.mad-hover {
+  background-position: 0 -1800px;
+}
+
+.icon-save {
+  background-position: 0 -2250px;
+}
+.icon-save:hover, .icon-save.save-hover {
+  background-position: 0 -2100px;
+}
+
+.icon-squid {
+  background-position: 0 -2550px;
+}
+.icon-squid:hover, .icon-squid.squid-hover {
+  background-position: 0 -2400px;
+}
+
+.icon-tumblr {
+  background-position: 0 -2850px;
+}
+.icon-tumblr:hover, .icon-tumblr.tumblr-hover {
+  background-position: 0 -2700px;
+}
+
+.icon-wifi {
+  background-position: 0 -3150px;
+}
+.icon-wifi:hover, .icon-wifi.wifi-hover {
+  background-position: 0 -3000px;
+}
+
+.icon-x {
+  background-position: 0 -3450px;
+}
+.icon-x:hover, .icon-x.x-hover {
+  background-position: 0 -3300px;
+}
+
+body {
+  background-image: url("../img//Crowd.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body header {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body header h1 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0px;
+}
+body li {
+  list-style: none;
   display: inline-block;
   width: 150px;
   height: 150px;
 }
-li a span {
-  position: absolute;
-  top: -9999em;
-  left: -9999em;
+body li a {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+}
+body li a span {
+  display: none;
+  color: red;
+}
+body li:hover a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+body li:hover span {
+  font-family: "Helvetica Neue", "Helvetica", "Apple SD Gothic Neo", "NanumBarunGothic", "Malgun Gothic", dotum, "Lucida Grande", sans-serif;
+  display: block;
+  text-align: center;
+  font-size: 300%;
+  font-weight: bold;
+  border-bottom: white thick solid;
+  line-height: 50px;
+  margin-bottom: 5px;
+}
+
+a {
+  color: black;
+}
+
+a:active {
+  color: black;
 }
 
 /*
@@ -612,4 +724,58 @@ li a span {
   h3 {
     page-break-after: avoid;
   }
+}
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 'one two thr fou' 'fiv six sev eig' 'nin ten ele twe';
+}
+
+li#icon1 {
+  grid-area: one;
+}
+
+li#icon2 {
+  grid-area: two;
+}
+
+li#icon3 {
+  grid-area: thr;
+}
+
+li#icon4 {
+  grid-area: fou;
+}
+
+li#icon5 {
+  grid-area: fiv;
+}
+
+li#icon6 {
+  grid-area: six;
+}
+
+li#icon7 {
+  grid-area: sev;
+}
+
+li#icon8 {
+  grid-area: eig;
+}
+
+li#icon9 {
+  grid-area: nin;
+}
+
+li#icon10 {
+  grid-area: ten;
+}
+
+li#icon11 {
+  grid-area: ele;
+}
+
+li#icon12 {
+  grid-area: twe;
 }
