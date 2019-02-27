@@ -1,3 +1,3 @@
-#boilerplatter
+# Sprite Sheets
 
-This is a custom boiler platter based with elements taken from the HTML5 boilerplate. The main addition with this platter is that is is SASS ready. This is meant to be used for me and was developed for a class. As time goes, I will be updating it. 
+In this project, I learned how to create hover states for icons using compass. I did this by using a sprite sheet. The icons selected are random, and they have no meaning. This was just to learn.
